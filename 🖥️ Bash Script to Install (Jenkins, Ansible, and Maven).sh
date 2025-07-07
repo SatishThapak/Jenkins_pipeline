@@ -43,11 +43,11 @@ sudo apt update -y
 sudo apt install -y ansible
 
 # Install Maven
-echo "📦 Installing Maven..."
+echo "Installing Maven..."
 sudo apt install -y maven
 
 # Final version checks
-echo "🧪 Final version check..."
+echo "Final version check..."
 echo "Java version:"
 java --version
 
@@ -60,4 +60,4 @@ ansible --version
 echo "Maven version:"
 mvn --version
 
-echo "✅ All tools installed successfully!"
+echo "All tools installed successfully!"
