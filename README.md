@@ -3,7 +3,6 @@
 🔧 Project Overview This project focuses on building and deploying a Java application using a fully automated CI/CD pipeline. Below are the key steps involved:
 
 1️⃣ Version Control (Git & GitHub):
-
     • The source code is managed using Git and hosted on GitHub.
     • Branches such as main and development are used to organize the codebase and track changes effectively.
 
