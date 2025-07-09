@@ -1,2 +1,45 @@
-##Installing Jenkins on an AWS EC2 Instance (Debian/Ubuntu)
-In this guide, we'll walk through installing Jenkins on a Debian-based system, such as Ubuntu, hosted on an AWS EC2 instance.
+# 🛠️ Installing Jenkins on an AWS EC2 Instance (Debian/Ubuntu)
+
+## 📋 Prerequisites
+1.An AWS EC2 instance running Debian/Ubuntu 
+2.sudo privileges
+3.Port 8080 open in the security group
+
+## 1️⃣ Install Java (OpenJDK 21)
+✅ Update the package list and install dependencies:
+sudo apt update
+sudo apt install fontconfig openjdk-21-jre
+
+✅ Verify the Java installation:
+
+## 2️⃣ Add Jenkins Repository and Install Jenkins
+## ✅ Add Jenkins GPG key and repository: 
+sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+
+echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | \
+  sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+## ✅ Update package list and install Jenkins:
+sudo apt-get update
+sudo apt-get install jenkins
+
+## 3️⃣ Enable and Start Jenkins Service
+sudo systemctl enable jenkins
+sudo systemctl start jenkins
+sudo systemctl status jenkins
+
+## 4️⃣ Access Jenkins and Initial Setup
+1.Open your browser and go to:
+http://<your-ec2-public-ip>:8080
+2.Wait for the Unlock Jenkins page to appear.
+3.Retrieve the initial admin password:
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+4.Copy the password and paste it into the web interface to unlock Jenkins.
+
+## 5️⃣ Create First Admin User
+1.Install the suggested plugins or customize as needed.
+2.On the Create First Admin User page, fill in your desired credentials.
+3.Click Save and Finish.
+4.Click Start using Jenkins
+
