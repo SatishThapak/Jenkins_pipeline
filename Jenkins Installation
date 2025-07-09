@@ -17,20 +17,20 @@ sudo apt install fontconfig openjdk-21-jre
 ## 2️⃣ Add Jenkins Repository and Install Jenkins
 
 ## ✅ Add Jenkins GPG key and repository: 
-sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+  sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 
-echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | \
+  echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | \
   sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 
 ## ✅ Update package list and install Jenkins:
-sudo apt-get update
-sudo apt-get install jenkins
+  sudo apt-get update
+  sudo apt-get install jenkins
 
 ## 3️⃣ Enable and Start Jenkins Service
-sudo systemctl enable jenkins
-sudo systemctl start jenkins
-sudo systemctl status jenkins
+   sudo systemctl enable jenkins
+   sudo systemctl start jenkins
+   sudo systemctl status jenkins
 
 ## 4️⃣ Access Jenkins and Initial Setup
 1.Open your browser and go to:
