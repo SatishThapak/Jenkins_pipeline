@@ -1,11 +1,11 @@
-# 🛠️ Installing Jenkins on an AWS EC2 Instance (Debian/Ubuntu)
+#  🛠️ Installing Jenkins on an AWS EC2 Instance (Debian/Ubuntu)
 
 ## 📋 Prerequisites
 1.An AWS EC2 instance running Debian/Ubuntu 
 2.sudo privileges
 3.Port 8080 open in the security group
 
-## 1️⃣ Install Java (OpenJDK 21)
+##  1️⃣ Install Java (OpenJDK 21)
 ✅ Update the package list and install dependencies:
 sudo apt update
 sudo apt install fontconfig openjdk-21-jre
