@@ -1,0 +1,2 @@
+## Installing Jenkins on an AWS EC2 Instance (Debian/Ubuntu)
+In this guide, we'll walk through installing Jenkins on a Debian-based system, such as Ubuntu, hosted on an AWS EC2 instance.
