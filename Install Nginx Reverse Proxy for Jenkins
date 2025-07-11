@@ -2,7 +2,7 @@ Nginx is one of the most popular web servers in the world and is responsible for
 It is a lightweight choice that can be used as either a web server or reverse proxy.
 We will configure Nginx as a reverse proxy to direct client requests to Jenkins.
 
-## Update Package Repository and Upgrade Packages¶
+## Update Package Repository and Upgrade Packages
    sudo apt update
    sudo apt upgrade
 
